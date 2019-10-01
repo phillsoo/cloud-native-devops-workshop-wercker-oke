@@ -17,7 +17,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: movie-api-service-1
-  namespace: <namespace>
+  namespace: phillsoo-seoul-ns1
   labels:
     app: movie-api-service
 spec:
@@ -34,7 +34,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: movie-api-service
-  namespace: <namespace>
+  namespace: phillsoo-seoul-ns1 
 spec:
   replicas: 2
   selector: 
@@ -47,7 +47,7 @@ spec:
     spec:
       containers:
       - name: movie-api-service
-        image: icn.ocir.io/apackrsct01/movie-api-service:1.0
+        image: icn.ocir.io/apackrsct01/movie-api-service-pslim:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
