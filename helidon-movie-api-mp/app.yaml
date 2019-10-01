@@ -47,7 +47,7 @@ spec:
     spec:
       containers:
       - name: movie-api-service
-        image: icn.ocir.io/apackrsct01/movie-api-service-pslim:latest
+        image: icn.ocir.io/apackrsct01/movie-api-service-phillsoo:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
